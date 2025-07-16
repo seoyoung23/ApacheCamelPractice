@@ -5,39 +5,42 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.3</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>2.7.14</version>
+        <relativePath/>
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>camelPractice</artifactId>
+    <artifactId>camel-practice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>camelPractice</name>
-    <description>camelPractice</description>
-    <url/>
-    <licenses>
-        <license/>
-    </licenses>
-    <developers>
-        <developer/>
-    </developers>
-    <scm>
-        <connection/>
-        <developerConnection/>
-        <tag/>
-        <url/>
-    </scm>
+    <name>camel-practice</name>
+    <description>Demo project for Apache Camel</description>
+
     <properties>
-        <java.version>17</java.version>
+        <java.version>11</java.version>
+        <camel.version>3.18.8</camel.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.apache.camel.springboot</groupId>
             <artifactId>camel-spring-boot-starter</artifactId>
-            <version>4.13.0</version>
+            <version>${camel.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.camel.springboot</groupId>
+            <artifactId>camel-servlet-starter</artifactId>
+            <version>${camel.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.camel.springboot</groupId>
+            <artifactId>camel-http-starter</artifactId>
+            <version>${camel.version}</version>
         </dependency>
 
         <dependency>
@@ -46,6 +49,7 @@
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -61,5 +65,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

@@ -1,0 +1,8 @@
+### GET 테스트
+GET http://localhost:8080/camel/api/hello
+
+### POST 테스트
+POST http://localhost:8080/camel/api/message
+Content-Type: text/plain
+
+Hello Camel! 안녕하세요 캐멀!
